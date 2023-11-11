@@ -14,7 +14,7 @@ ENV USER=root PASSWORD=root DBNAME=root
 
 # Pode ser ./main.exe main ou pode ser ./main.exe . 
 # Aqui estamos copiando a versão compilada de nossa aplicação para o container docker
-COPY ./main.exe main
+COPY ./main main
 
 #CMD ou ENTRYPOINT [ "executable" ] fazem a mesma função, que é executar a versão compilada de nossa aplicação
-CMD [ "./main.exe" ]
+CMD [ "./main" ]
